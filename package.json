@@ -1,46 +1,19 @@
 {
-  "name": "wechat",
-  "version": "2.0.3",
-  "description": "微信公共平台Node库",
-  "main": "app.js",
+  "name": "weixin_server",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "make test-all"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/doit05/wechatSite.git"
-  },
-  "keywords": [
-    "weixin",
-    "wechat"
-  ],
   "dependencies": {
-    "connect": "^3.4.1",
-    "ejs": ">=1.0.0",
-    "express": "^4.13.4",
-    "node-wechat": "^0.2.0",
-    "sax": "^1.2.1",
-    "wechat-crypto": "0.0.2",
-    "xml2js": "^0.4.16",
-    "xmlbuilder": "^8.0.0"
-  },
-  "devDependencies": {
-    "supertest": "*",
-    "mocha": "*",
-    "should": "~3.0.0",
-    "expect.js": "*",
-    "connect": "2.5.*",
-    "travis-cov": "*",
-    "coveralls": "*",
-    "mocha-lcov-reporter": "*",
-    "muk": "*",
-    "rewire": "*",
-    "istanbul": "*"
-  },
-  "author": "doit05",
-  "license": "MIT",
-  "readmeFilename": "README.md",
-  "directories": {
-    "test": "test"
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "ejs": "~2.3.3",
+    "express": "~4.13.1",
+    "morgan": "~1.6.1",
+    "nodemon": "^1.8.1",
+    "serve-favicon": "~2.3.0",
+    "wechat": "^2.0.3"
   }
 }
