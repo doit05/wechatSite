@@ -1,11 +1,13 @@
-var wechat = require('wechat');
+var wechat = require('wechat'),
+    express = require('express'),
+    connect = require('connect');
 var config = {
     //35b4e242c3e54c43c84b39e9a7a2935a AppSecret
   token: 'doit05',
   appid: 'wx11abf14c4e9143bd',
   encodingAESKey: 'YPSJGyRHGmPvYKOs48NHkybLneO4os8RFnzwUF8Qt6W'
 };
-
+var app = express();
 app.use(express.query());
 app.use('/wechat', wechat(config, function (req, res, next) {
   // 微信输入信息都在req.weixin上
